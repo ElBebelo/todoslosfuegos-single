@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
         <link type="text/css" rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" href="/main.js"></script>
+        <script type="text/javascript" src="/main.js"></script>
         <title>Todos Los Fuegos - Pagina Oficial</title>
     </head>
     <body>
@@ -21,8 +21,8 @@
             </div>
             <div id="presentation">
                 <div id="text-cover">
-                    <h3>"Nos importa demasiado el mundo para verlo desalmado"</h3>
-                    <p>-De Infancia y Audacia</p>
+                    <div id="letra"></div>
+                    <div id="cancion"></div>
                 </div>
             </div>
             <div id="biografia">
@@ -61,13 +61,13 @@
             </div>
             <div id="galeria">
                 <div id="gallery-container">
-                    <div class="bg-image img1" onclick="mostrarImagen('.img1')"></div>
-                    <div class="bg-image img2"></div>
-                    <div class="bg-image img3"></div>
-                    <div class="bg-image img4"></div> 
-                    <div class="bg-image img5"></div> 
-                    <div class="bg-image img6"></div> 
-                    <div class="bg-image img7"></div> 
+                    <div class="bg-image img1" onclick='mostrarImagen("myImg-1")'><img class="gallery-img" id="myImg-1" src="/assets/TLF (22).jpg" ></div>
+                    <div class="bg-image img2" onclick='mostrarImagen("myImg-2")'><img class="gallery-img" id="myImg-2" src="/assets/TLF (6).jpg" ></div>
+                    <div class="bg-image img3" onclick='mostrarImagen("myImg-3")'><img class="gallery-img" id="myImg-3" src="/assets/TLF (10).jpg" ></div>
+                    <div class="bg-image img4" onclick='mostrarImagen("myImg-4")'><img class="gallery-img" id="myImg-4" src="/assets/TLF (121).jpg" ></div> 
+                    <div class="bg-image img5" onclick='mostrarImagenHeight("myImg-5")'><img class="gallery-img" id="myImg-5" src="/assets/TLF (40).jpg" ></div> 
+                    <div class="bg-image img6" onclick='mostrarImagenHeight("myImg-6")'><img class="gallery-img" id="myImg-6" src="/assets/TLF (28).jpg" ></div> 
+                    <div class="bg-image img7" onclick='mostrarImagenHeight("myImg-7")'><img class="gallery-img" id="myImg-7" src="/assets/TLF (153).jpg" ></div> 
                     <div class="lyrics-text text1">
                         <p>Mi cabeza no distingue entre la urgencia de mi panza y los gritos de mi vacio existencial</p>
                         <h4>Barro</h4>
@@ -96,9 +96,7 @@
                   </div>
                   <div id="myModal" class="modal">
                     <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="modal-title"></div>
-                    <div id="modal-text"></div>
+                    <img class="modal-content" id="modal-img">
                 </div>
             </div>
             <div id="contact">

@@ -25,31 +25,160 @@ body{
     letter-spacing: 2px;
     font-size: 32px;
 }
-#text-cover h3{
+#text-cover #letra{
     font-family: 'Dosis', sans-serif ;
     color: white;
     text-align: right;
     position: absolute;
-    bottom: 20%;
-    right: 5%;
     font-size: 26px;
     letter-spacing: 1px;
     width: 23%;
     line-height: 36px;
     font-weight: 400;
+    animation: carouselmainmovement 40s linear infinite forwards;    
 }
-#text-cover p{
+#letra:after{
+    animation: carouselmain 40s linear infinite forwards;
+    content: "Nos importa demasiado el mundo para verlo desalmado";
+}
+#text-cover #cancion{
     font-family: 'Dosis', sans-serif;
     color: hsl(0, 78%, 39%);
     text-align: right;
     position: absolute;
-    bottom: 14%;
-    right: 5%;
     font-size: 26px;
     letter-spacing: 1px;
     width: 23%;
     line-height: 36px;
     font-weight: 300;
+    animation: carouseltextmovement 40s linear infinite forwards;
+}
+#cancion:after{
+    animation: carouseltext 40s linear infinite forwards;
+    content: "-De Infancia y Audacia";
+    
+}
+@keyframes carouseltextmovement{    
+    0%{
+        bottom: 60%;
+        right: 7.5%;
+    }
+    5%{
+        bottom: 60%;
+        right: 5%;
+    }
+    20%{
+        bottom: 30%;
+        right: 60%;
+        text-align: left;
+    }
+    30%{
+        bottom: 30%;
+        right: 70%;
+    }
+    45%{
+        bottom:30%;
+        right: 10%;
+        text-align: right;
+    }
+    55%{
+        bottom:30%;
+        right: 5%;
+    }
+    70%{
+        right:60%;
+        bottom: 60%;
+        text-align: left;
+    }
+    80%{
+        right:70%;
+        bottom: 60%;
+    }
+    95%{
+        bottom: 60%;
+        right: 10%;
+        text-align: right;
+    }
+}
+@keyframes carouseltext {
+    0%{opacity: 1;}
+    5%{opacity: 0;}
+    20% {opacity: 0;}
+    25%{opacity: 1;
+        content: "-Bailarina";}
+    30%{opacity: 0;}    
+    45%{opacity: 0;}
+    50%{opacity: 1;
+        content: "-Barro";}
+    55%{opacity: 0;}    
+    70%{opacity: 0;}
+    75%{opacity: 1;
+        content: "-Relevo de Pruebas";}
+    80%{opacity: 0;}
+    95%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+@keyframes carouselmainmovement{    
+    0%{
+        bottom: 65%;
+        right: 7.5%;
+    }
+    5%{
+        bottom: 65%;
+        right: 5%;
+    }
+    20%{
+        bottom: 35%;
+        right: 60%;
+        text-align: left;
+    }
+    30%{
+        bottom: 35%;
+        right: 70%;
+    }
+    45%{
+        bottom:35%;
+        right: 10%;
+        text-align: right;
+    }
+    55%{
+        bottom:35%;
+        right: 5%;
+    }
+    70%{
+        bottom: 65%;
+        right:60%;
+        text-align: left;
+    }
+    80%{
+        bottom: 65%;
+        right:70%;
+    }
+    95%{
+        bottom: 65%;
+        right: 10%;
+        text-align: right;
+    }
+}
+@keyframes carouselmain {
+    0%{opacity: 1;}
+    5%{opacity: 0;}
+    20% {opacity: 0;}
+    25%{opacity: 1;
+        content: "Pero no hay esperanza en el papel, si cargamos la desidia en la piel";}
+    30%{opacity: 0;}    
+    45%{opacity: 0;}
+    50%{opacity: 1;
+        content: "Es la ofrenda de mi barrio, regalarse siempre yuyos con espinas";}
+    55%{opacity: 0;}    
+    70%{opacity: 0;}
+    75%{opacity: 1;
+        content: "Debia ser la mia si era ella libertad, como enfrentar al carcelero de mis años mas modestos";}
+    80%{opacity: 0;}
+    95%{opacity: 0;}
+    100%{opacity: 1;}
+    
 }
 #biografy-title,
 #biografy-text{
