@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@font-face{
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format(svg),
+    url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{ 
+    font-family: 'Encode Sans', 'Roboto', sans-serif;
+}
+.navbar a{
+    font-family: 'Dosis', sans-serif ;
+    color: white;
+    
+}
+#banner h1{
+    font-family: 'Dosis', sans-serif ;
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+#text-cover h3{
+    font-family: 'Dosis', sans-serif ;
+    color: white;
+    text-align: right;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    font-size: 26px;
+    letter-spacing: 1px;
+    width: 23%;
+    line-height: 36px;
+    font-weight: 400;
+}
+#text-cover p{
+    font-family: 'Dosis', sans-serif;
+    color: hsl(0, 78%, 39%);
+    text-align: right;
+    position: absolute;
+    bottom: 14%;
+    right: 5%;
+    font-size: 26px;
+    letter-spacing: 1px;
+    width: 23%;
+    line-height: 36px;
+    font-weight: 300;
+}
+#biografy-title,
+#biografy-text{
+    h3, p{
+        font-family: 'Dosis', sans-serif;
+    }
+}
+#contact{
+    #msg{
+        font-family: 'Dosis', sans-serif ;
+    }
+    .footer{
+        #redes{
+            font-family: 'Dosis', sans-serif ;
+        }
+        #authors{
+            font-family: 'Dosis', sans-serif ;
+        }
+    }
+}

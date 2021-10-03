@@ -1,0 +1,629 @@
+*{
+    margin: 0 auto;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    
+}
+#banner{
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: -5%;
+    left: 0;
+    height: 15%;
+    z-index: 2;
+    
+    
+    h1{
+        text-align: center;
+        margin-right: 10%;
+        position: relative;
+        top: 42%;
+        width: 25%;
+        padding: 5px;
+        border-radius: 16px;
+        box-shadow: 10px 5px rgb(167, 54, 54);
+    }
+    .navbar{
+        
+        position:fixed; 
+        top: 2%;
+        left: -5%;
+        height: 4%;
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 20px;
+        box-shadow: 10px 5px rgb(167, 54, 54);
+        border-radius: 16px;
+        align-items: left;
+        line-height: 24px;
+        a{
+            text-align: center;
+            width: 16%;
+            display:inline-block;
+            padding: 3px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position:relative; 
+            top: 0%;
+            height: 10%;
+            text-decoration: none;
+            border-radius: 15px;
+            background-color: transparent;
+            transition: 500ms;
+            font-size: 18px;
+            
+        }
+        a:hover{
+            color: hsl(60, 71%, 66%);
+            font-size: 20px;
+            
+        }
+    }
+}
+#presentation{
+    display: block;
+        width: 90%;
+        height: 100%;
+        position: relative;
+        top: -18%;
+        text-align: left;
+        margin-top: 8%;
+        background-image: url("/assets/TLF\ \(26\).jpg");
+        background-size: cover;
+        z-index: 1;
+        #text-cover{
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient( rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0.776) , rgb(0, 0, 0) );
+        }
+}
+#biografia{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 2%;
+    position: relative;
+    padding:2% 5% 0 5%;
+    #biografy-title{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: 95%;
+        width: 100%;
+        position: relative;
+        
+        h3{
+            color: rgb(27, 12, 12);
+            text-align: left;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            top: 20%;
+            width: 70%;
+            left: -15%;
+            font-size: 50px;
+            letter-spacing: 1.5px;
+            line-height: 50px;
+        }
+        h3:last-child{
+            color: rgb(233, 56, 56);
+            justify-content: left;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            top: 20%;
+            width: 70%;
+            left: -15%;
+            font-size: 50px;
+            letter-spacing: 1.5px;
+            line-height: 50px;
+
+        }
+    }
+    #biografy-text{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        justify-items: center;
+        text-align: left;
+        p{
+            margin: 0 auto;
+            padding: 5px;
+            position: relative;
+            top: 10%;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 400;
+            
+        }
+    }
+    .tarjeta{
+        display: grid;
+        height: 80%;
+        width: 100%;
+        
+        margin-top: 50px;
+        border-radius: 10px;
+        align-items: flex-end;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.483);
+        h3{
+            color: white;
+            position: relative;
+            display: block;
+            margin: 10px auto;
+            padding: auto;
+            top: 80%;
+            font-size: 24px;
+            
+        }
+        h4{
+            color: white;
+            display: block;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        
+    }
+    .tarjeta:hover h3,
+    .tarjeta:hover h4{
+        color: transparent;
+        transition: 500ms;
+    }
+    #juano{
+        grid-column: 3/5;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0)) , url("/assets/TLF\ \(16\).jpg");
+        background-size: cover;
+        background-position-x: 90%;
+        background-position-y: center;
+        transition: 500ms;
+        overflow: hidden;
+    }
+    #juano:hover{
+        background-image: url("/assets/TLF\ \(16\).jpg") ;
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    #rata{
+        grid-column: 5/7;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0)) , url("/assets/TLF\ \(24\).jpg");
+        background-size: cover;
+        background-position-x: 80%;
+        background-position-y: center;
+        transition: 500ms;
+        overflow: hidden;
+    }
+    #rata:hover{
+        background-image: url("/assets/TLF\ \(24\).jpg") ;
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    #lean{
+        grid-column: 7/9;
+        grid-row: 1/2;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0)) , url("/assets/TLF\ \(39\).jpg");
+        background-size: cover;
+        background-position-x: 40%;
+        background-position-y: center;
+        transition: 500ms;
+        overflow: hidden;
+    }
+    #lean:hover{
+        background-image: url("/assets/TLF\ \(39\).jpg") ;
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    #marian{
+        grid-column: 5/7;
+        grid-row: 2/3;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0)) , url("/assets/TLF\ \(22\).jpg");
+        background-size: cover;
+        background-position-x: 50%;
+        background-position-y: center;
+        transition: 500ms;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    #marian:hover{
+        background-image: url("/assets/TLF\ \(22\).jpg") ;
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    #flor{
+        grid-column: 7/9;
+        grid-row: 2/3;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0)) , url("/assets/TLF\ \(149\).jpg");
+        background-size: cover;
+        background-position-x: 80%;
+        background-position-y: center;
+        transition: 500ms;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    #flor:hover{
+        background-image: url("/assets/TLF\ \(149\).jpg") ;
+        transform: scale(1.1);
+        transition: 500ms;
+    
+    }
+}
+
+#galeria{
+    display: block;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    background-color: hsl(0, 3%, 7%);
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5px;
+    
+}
+#gallery-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 1px;
+    left: 0%;
+    height: 100%;
+    width: 99%;
+
+}
+.bg-image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border: 1px solid white;
+}
+.img1{
+    background-image:url("/assets/TLF\ \(22\).jpg");
+    grid-column: 2/5;
+    grid-row: 1/4;
+    background-position-y: 10% ;
+  }
+  .img2{
+    background-image:url("/assets/TLF\ \(6\).jpg");
+    grid-column: 7/10;
+    grid-row: 1/4;
+    background-position-y: 00%;
+  }
+  .img3{
+    background-image:url("/assets/TLF\ \(10\).jpg");
+    grid-column: 1/3;
+    grid-row: 4/7;
+  }
+  .img4{
+    background-image:url("/assets/TLF\ \(121\).jpg");
+    grid-column: 7/10;
+    grid-row: 7/10  ;
+    background-position-y: 70%;
+  }
+  .img5{
+      background-image: url("/assets/TLF\ \(40\).jpg");
+      grid-row: 4/8;
+      grid-column:5/7 ;
+  }
+  .img6{
+      background-image: url("/assets/TLF\ \(28\).jpg");
+      grid-column: 3/5;
+      grid-row: 7/10;
+      background-position-y: 50% ;
+  }
+  .img7{
+      background-image: url("/assets/TLF\ \(153\).jpg");
+      grid-column: 10/12;
+      grid-row: 3/8;
+      background-position-y: 10%;
+      background-position-x: 40%;
+  }
+.lyrics-text{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    width: 80%;
+    p{
+        color: hsl(0, 5%, 85%);
+    }
+    h4{
+        color: hsl(0, 61%, 42%);
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+}
+  .text1{
+      grid-column: 5/7;
+      grid-row: 1/3;
+  }
+  .text2{
+    grid-column: 10/12;
+    grid-row: 1/2;
+}
+.text3{
+    grid-column: 3/5;
+    grid-row: 4/6;
+}
+.text4{
+    grid-column: 7/10;
+    grid-row: 4/6;
+}
+.text5{
+    grid-column: 1/3;
+    grid-row: 7/9;
+}
+.text6{
+    grid-column: 5/7;
+    grid-row: 8/9;
+}
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 6;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 85%;
+        max-width: 650px;
+      }
+      .modal-content {
+        margin: auto;
+        display: block;
+      }
+      
+      /* Add Animation */
+      .modal-content, #caption {  
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+#contact{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: hsl(0, 3%, 7%);
+    margin: 0 auto;
+    #img-banda{
+        position: absolute;
+        top: 13%;
+        right: 20%;
+        width: 30%;
+        height: 70%;
+        background-image: url("/assets/TLF\ \(146\).jpg");
+        background-size: cover;
+        z-index: 4;
+        border-radius: 10%;
+        transform: scaleX(-1);
+        box-shadow: 0px 2px 6px hsl(0, 1%, 18%);
+    }
+    #msg{
+        background-color: none;
+        color: hsl(0, 78%, 39%);
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 18%;
+        font-size: 44px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    
+    #bg-contact{
+        display: block;
+        position: relative;
+        top: 0;
+        height: 70%;
+        background-image:  linear-gradient(0deg, hsla(0, 0%, 0%, 0.075), hsl(0, 3%, 7%)), url("/assets/303526.jpg");
+        background-size: cover;
+        background-position-y: 20%;
+    }
+    .contact-form{
+        position: absolute;
+        top: 13%;
+        right: 5%;
+        width: 28%;
+        height: 70%;
+        z-index: 4;
+        background-color: hsl(0, 0%, 50% / 1);
+        border-radius: 10%;
+        box-shadow: 2px 2px 6px hsl(0, 1%, 18%);
+        form{
+            width: 100%;
+            height: 100%;
+            display: block;
+            
+            
+            input[type=text]{
+                border: none;
+                border-bottom: 2px solid hsl(0, 78%, 39%) ;
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 10px;
+                margin: 5% 10 1% 10%;
+                background: transparent;
+            }
+            input[type=text]:focus{
+                outline: none;
+                background: transparent;
+                border-bottom: 2px solid hsl(0, 100%, 50%) ;
+
+            }
+            textarea{
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 10px;
+                margin: 5% 10 1% 10%;
+                border: none;
+                border-bottom: 2px solid hsl(0, 78%, 39%) ; 
+                resize: none;
+                background: transparent;
+            }
+            textarea:focus{
+                outline: none;
+                background: transparent;
+            }
+            label{
+                width: 80%;
+                margin-bottom: 10px;
+                position: relative;
+                top: 5%;
+                left: 10%;
+                font-weight: bold;
+                color:hsla(0, 0%, 0%, 0.904) ;
+            }
+            input[type=submit]{
+                background-color: hsl(0, 78%, 39%);
+                border: none;
+                box-shadow: 2px 4px 7px black;
+                border-radius: 1vw;
+                width: 20%;
+                height: 7%;
+                display: block;
+                position: relative;
+                align-self: right;
+                margin: 0 auto;
+                margin-right: 50px;
+                margin-top: 10px;
+                text-decoration: none;
+                font-size: 16px;
+                color: white;
+                transition: 500ms;
+                cursor: pointer;
+            }
+            input[type=submit]:hover{
+                color: hsl(60, 71%, 66%);
+                font-size: 18px;
+                transition: 500ms;
+            }
+
+        }
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        position: relative;
+        bottom: 0%;
+        height: 30%;
+        width: 90%;
+        padding:0 5% 0 5%;
+        background-color: hsl(0, 100%, 99%);
+        #redes{
+            grid-column: 1/6;
+            position: relative;
+            width: 100%;
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+            padding-top: 5%;
+        }
+        #authors{
+            grid-column: 6/11;
+            grid-row: 2/3;
+            position: relative;
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+            width: 100%;
+            align-self: center;
+            
+        }
+        
+                .fa {
+                    display: inline-block;
+                    cursor: pointer;
+                    text-align: center;
+                    position: relative;
+                    top: 10%;
+                    left: 5%;
+                    height: 60px;
+                    padding: 12px;
+                    font-size: 60px;
+                    width: 60px;
+                    text-decoration: none;
+                    margin: 15px;
+                    margin-bottom: 40%;
+                    background-color: rgba(98, 94, 94, 0.81);
+                    border-radius: 8px;
+                    color: white;
+                    transition: 300ms;
+                  }
+                  .fa:hover{
+                      transform: scale(1.1);
+                      transition: 300ms;
+                      box-shadow: 2px 2px 6px hsl(0, 1%, 18%);
+                  }
+                  .fa-facebook{
+                      background-color: blue;
+                      grid-column: 1/2;
+                      grid-row: 2/3;
+                  }
+                  .fa-twitter{
+                      background-color: rgb(58, 185, 228);
+                      grid-column: 2/3;
+                      grid-row: 2/3;
+                  }
+                  .fa-instagram{
+                      background-image: linear-gradient(45deg, orange, purple);
+                      grid-column: 3/4;
+                      grid-row: 2/3;
+                  }
+                  .fa-spotify{
+                      background-color: #0da20d;
+                      grid-column: 4/5;
+                      grid-row: 2/3;
+                  }
+                  .fa-youtube{
+                      background-color: red;
+                      grid-column: 5/6;
+                      grid-row: 2/3;
+                  }
+              
+        
+
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: .7em;
+}
+::-webkit-scrollbar-track{
+    background: hsl(0, 0%, 50% / 1);
+    border-left: .5px solid white;
+}
+::-webkit-scrollbar-thumb{
+    background: hsl(0, 64%, 28% / 1);
+    border-radius: 10vw;
+    border: 1px solid white;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: hsl(0, 64%, 28% / 0.7);
+}
+
