@@ -1099,6 +1099,10 @@ body {
     right: 10%;
     text-align: right;
   }
+  100% {
+    bottom: 60%;
+    right: 7.5%;
+  }
 }
 
 @keyframes carouseltextmovement {
@@ -1141,6 +1145,10 @@ body {
     bottom: 60%;
     right: 10%;
     text-align: right;
+  }
+  100% {
+    bottom: 60%;
+    right: 7.5%;
   }
 }
 
@@ -1275,6 +1283,10 @@ body {
     right: 10%;
     text-align: right;
   }
+  100% {
+    bottom: 65%;
+    right: 7.5%;
+  }
 }
 
 @keyframes carouselmainmovement {
@@ -1317,6 +1329,10 @@ body {
     bottom: 65%;
     right: 10%;
     text-align: right;
+  }
+  100% {
+    bottom: 65%;
+    right: 7.5%;
   }
 }
 
