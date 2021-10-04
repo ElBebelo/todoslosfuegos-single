@@ -12,28 +12,43 @@
     font-weight: normal;
     font-style: normal;
 }
+:root{
+    --fs-xxl:3rem;
+    --fs-xl1:2.5rem
+    --fs-xl: 2rem;
+    --fs-800: 1.75rem ;
+    --fs-700: 1.5rem;
+    --fs-600: 1.25rem;
+    --fs-500: 1rem ;
+    --fs-400: 0.75rem ;
+    --fs-300: 0.5rem;
+    --fs-200: 0.25rem;
+}
 body{ 
     font-family: 'Encode Sans', 'Roboto', sans-serif;
 }
-.navbar a{
+.navbar{
+
+    a{
     font-family: 'Dosis', sans-serif ;
     color: white;
-    
+    font-size: var(--fs-500);
+}
 }
 #banner h1{
     font-family: 'Dosis', sans-serif ;
     letter-spacing: 2px;
-    font-size: 32px;
+    font-size: var(--fs-xl);
 }
 #text-cover #letra{
     font-family: 'Dosis', sans-serif ;
     color: white;
     text-align: right;
     position: absolute;
-    font-size: 26px;
+    font-size: var(--fs-800);
     letter-spacing: 1px;
-    width: 23%;
-    line-height: 36px;
+    width: 24%;
+    line-height: 2rem;
     font-weight: 400;
     animation: carouselmainmovement 40s linear infinite forwards;    
 }
@@ -46,10 +61,10 @@ body{
     color: hsl(0, 78%, 39%);
     text-align: right;
     position: absolute;
-    font-size: 26px;
+    font-size: var(--fs-800);
     letter-spacing: 1px;
-    width: 23%;
-    line-height: 36px;
+    width: 24%;
+    line-height: 2rem;
     font-weight: 300;
     animation: carouseltextmovement 40s linear infinite forwards;
 }
@@ -60,47 +75,47 @@ body{
 }
 @keyframes carouseltextmovement{    
     0%{
-        bottom: 60%;
+        bottom: 55%;
         right: 7.5%;
     }
     5%{
-        bottom: 60%;
+        bottom: 55%;
         right: 5%;
     }
     20%{
-        bottom: 30%;
+        bottom: 25%;
         right: 60%;
         text-align: left;
     }
     30%{
-        bottom: 30%;
+        bottom: 25%;
         right: 70%;
     }
     45%{
-        bottom:30%;
+        bottom:25%;
         right: 10%;
         text-align: right;
     }
     55%{
-        bottom:30%;
+        bottom:25%;
         right: 5%;
     }
     70%{
         right:60%;
-        bottom: 60%;
+        bottom: 55%;
         text-align: left;
     }
     80%{
         right:70%;
-        bottom: 60%;
+        bottom: 55%;
     }
     95%{
-        bottom: 60%;
+        bottom: 55%;
         right: 10%;
         text-align: right;
     }
     100%{
-            bottom: 60%;
+            bottom: 55%;
             right: 7.5%;
         }
 
@@ -126,47 +141,47 @@ body{
 }
 @keyframes carouselmainmovement{    
     0%{
-        bottom: 65%;
+        bottom: 60%;
         right: 7.5%;
     }
     5%{
-        bottom: 65%;
+        bottom: 60%;
         right: 5%;
     }
     20%{
-        bottom: 35%;
+        bottom: 30%;
         right: 60%;
         text-align: left;
     }
     30%{
-        bottom: 35%;
+        bottom: 30%;
         right: 70%;
     }
     45%{
-        bottom:35%;
+        bottom:30%;
         right: 10%;
         text-align: right;
     }
     55%{
-        bottom:35%;
+        bottom:30%;
         right: 5%;
     }
     70%{
-        bottom: 65%;
+        bottom: 60%;
         right:60%;
         text-align: left;
     }
     80%{
-        bottom: 65%;
+        bottom: 60%;
         right:70%;
     }
     95%{
-        bottom: 65%;
+        bottom: 60%;
         right: 10%;
         text-align: right;
     }
     100%{
-        bottom: 65%;
+        bottom: 60%;
         right: 7.5%;
     }
 }
